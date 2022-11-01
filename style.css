@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./GameArea.jpg) no-repeat center/cover;
+}
+
+main {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#displayCount {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+#gamearea {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardSet {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerCard {
+  border: 1px solid black;
+}
+.card {
+  width: 50px;
+  height: 70px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  perspective: 1000px;
+}
+
+.card i {
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.verso {
+  position: absolute;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.5s;
+  backface-visibility: hidden;
+  border: 1px solid black;
+}
+.verso:hover {
+  transform: rotateX(180deg);
+}
+.recto {
+  transform: rotateX(180deg);
+  transition: all ease 0.5s;
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

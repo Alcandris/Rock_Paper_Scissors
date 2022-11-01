@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main id="board">
+      <div id="displayCount">
+        <div id="countWin" class="count">
+          <h1>W</h1>
+          <span id="displayWin">0</span>
+        </div>
+        <div id="countDraw" class="count">
+          <h1>D</h1>
+          <span id="displaydraw">0</span>
+        </div>
+        <div id="countLoose" class="count">
+          <h1>L</h1>
+          <span id="displayLoose">0</span>
+        </div>
+      </div>
+      <div id="gamearea">
+        <div class="cardSet">
+          <div class="card cpuCard" id="cpuscissors">
+            <div class="box" id="boxscissors">
+              <div class="recto">
+                <i class="fa-solid fa-hand-scissors"></i>
+              </div>
+              <div class="verso" id="cpuscissorsVerso"></div>
+            </div>
+          </div>
+          <div class="card cpuCard" id="cpupaper">
+            <div class="box" id="boxpaper">
+              <div class="recto">
+                <i class="fa-solid fa-hand"></i>
+              </div>
+              <div class="verso" id="cpupaperverso"></div>
+            </div>
+          </div>
+          <div class="card cpuCard" id="cpurock">
+            <div class="box" id="boxrock">
+              <div class="recto">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <div class="verso" id="cpurockverso"></div>
+            </div>
+          </div>
+        </div>
+        <div id="DisplayStatus"></div>
+        <div class="cardSet" id="cardSetplayer">
+          <div class="card playerCard" id="rock">
+            <i class="fa-solid fa-hand-fist"></i>
+          </div>
+          <div class="card playerCard" id="paper">
+            <i class="fa-solid fa-hand"></i>
+          </div>
+          <div class="card playerCard" id="scissors">
+            <i class="fa-solid fa-hand-scissors"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
